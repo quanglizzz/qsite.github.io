@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Helvetica, sans-serif;
+}
+body {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 14px;
+    height: 3000px;
+}
+div {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.clear {
+    clear: both;
+}
+button {
+    border-style: none;
+}
+
+
+header {
+    padding: 15px 0;
+    background-color: #f1f1f1;
+}
+#header {
+    display: flex;
+    align-items: center;
+}
+#header div {
+    float: left;
+}
+#header div#logo-brand {
+    width: calc(100% / 6);
+    padding: 0 15px;
+
+}
+#header #logo-brand a {
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+#header #logo-brand a img {
+    max-width: 130px;
+    vertical-align: middle;
+}
+#header #main-menu {
+    width: calc(2*(100% / 3));
+    height: 100%;
+    padding: 0 15px;
+    height: 100%;
+    display: inline;
+}
+#header #main-menu ul {
+    text-align: center;
+}
+#header #main-menu ul li {
+    display: inline-block;
+    height: 100%;
+    text-transform: uppercase;
+    margin: 0 10px;
+    line-height: 32px;
+}
+#header #main-menu ul li:hover {
+    border-bottom: black solid 1px;
+    height: 32px;
+}
+#header #main-menu ul li a {
+    color: #3d4246;
+    padding: 3px 0;
+    font-size: 13px;
+}
+
+#header div#icon-menu {
+    width: calc(100% / 6);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#header div#icon-menu > div {
+
+}
+#header div#icon-menu div#search {
+    position: relative;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+#header div#icon-menu div#search:hover div.search-bar{
+    display: block !important;
+}
+div.search-bar {
+    display: none;
+    position: absolute;
+    color: #484848;
+    top: 31px;
+    right: 6px;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 5px 0 rgb(102 102 102 / 40%);
+    border-radius: 3px;
+    z-index: 2;
+}
+div.search-bar div {
+    position: relative;
+}
+div.search-bar div button {
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+div.search-bar div button i {
+    font-size: 16px;
+    padding: 0;
+}
+input {
+    width: 260px;
+    height: 38px;
+    padding: 0 10px;
+    border: none;
+    background-color: white;
+}
+input:focus-visible {
+    outline: none;
+}
+#header div#icon-menu div#user {
+    height: 44.8px;
+    display: flex;
+    align-items: center;
+} 
+i {
+    font-size: 24px;
+    padding: 0 6px;
+    color: black;
+}
+
+
+
+
+
+
+#slider {
+    width: 100%;
+    min-height: 1px;
+}
+#slider img {
+    width: 100%;
+}
+
+
+
+#container {
+    margin: 0 0 80px;
+    padding: 40px 0 0;
+    width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#new-arival .title-subcontent {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#new-arival .title-subcontent h2 {
+    padding-bottom: 15px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#new-arival .title-subcontent h2 a {
+    color: black;
+}
+
+
+
+#new-arival div.newarival-product {
+    width: calc(100% / 3);
+    padding: 0 15px;
+    float: left;
+    position: relative;
+}
+#new-arival .newarival-product .product-img {
+    width: 100%;
+    padding-top: calc(100% + 30px);
+}
+#new-arival div.newarival-product .product-img .naproduct-pic1 {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#new-arival div.newarival-product .product-img .naproduct-pic2 {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#new-arival div.newarival-product ul {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    height: 25px;
+}
+#new-arival div.newarival-product ul li {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin: 0 5px 5px 0;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 25px;
+    height: 100%;
+    text-align: center;
+}
+.newarival-product:hover .product-content h3 {
+    border-bottom: black solid 1px;
+}
+.newarival-product:hover .product-img .naproduct-pic2 {
+    z-index: 4 !important;
+}
+.product-content {
+    z-index: 7;
+    text-align: center;
+    padding: 10px 15px 0;
+}
+.product-content h3 {
+    color: #3d4246;
+    font-size: 15px;
+    line-height: 1.5;
+    display: inline;
+}
+.product-content h3 a {
+    line-height: 1.5;
+}
+
+.product-content div {
+    padding: 10px 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-content div p {
+    display: inline;
+    margin: 0 0 0 5px;
+    padding: 0 5px 0 0;
+}
+.product-content div p:first-child {
+    color: #DD0000;
+}
+.product-content div p:last-child {
+    color: #999999;
+    text-decoration-line: line-through;
+    text-decoration-color: #999999;
+}
+
+
+
+#footer {
+
+}
